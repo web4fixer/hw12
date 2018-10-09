@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'latobold', 'latoregular', sans-serif;
+}
+
+.wrapper {
+    max-width: 1600px;
+
+}
+
+.wrapper-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 78px 0 78px;
+
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 61px;
+}
+
+.title-top-text {
+    font-size: 30px;
+}
+
+.title-bottom-text {
+    font-family: 'latoregular', sans-serif;
+    font-size: 14px;
+    color: #aeaeae;
+
+}
+
+.row-first {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row-second {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row-third {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.column-items {
+	margin-bottom: 61px;
+}
+.item-bottom-block {
+    padding: 0 15px;
+}
+
+.item-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title-text {
+    font-family: 'latoregular', sans-serif;
+    font-size: 13px;
+    margin: 20px 0 19px;
+}
+
+.item-rank {
+    display: inline-flex;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #f16d7f;
+}
+
+/*style for star rang */
+.star-rating__wrap {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.star-rating__wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.star-rating__input {
+    float: right;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.star-rating__input:before {
+    content: "\fa006";
+    color: #FFB300;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.star-rating__input:hover:before,
+.star-rating__input:hover~.star-rating__input:before {
+    content: "\f005";
+    color: #FFD779;
+}
+
+.star-rating__input:checked:before,
+.star-rating__input:checked~.star-rating__input:before {
+    content: "\f005";
+    color: #FFB300 ;
+}
+/*style for star rang end */
+/*media query start*/
+/* Landscape tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.row-first{
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		justify-content: space-around;
+	}
+	.row-second {
+		display: flex;
+		margin: auto;
+		max-width: 65%;
+    	flex-wrap: wrap;
+  
+	}
+	.row-third {
+		display: flex;
+		margin: auto;
+		flex-wrap: wrap;
+    	justify-content: space-around;
+	}
+}
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+.row-first{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: 75%;
+	justify-content: space-around;
+}
+.row-second {
+		display: flex;
+		margin: auto;
+		max-width: 75%;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+  
+	}
+.row-third {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: 75%;
+	justify-content: space-around;
+
+}
+.wrapper-content {
+	padding: 25px 0 25px; 
+	text-align: center;
+}
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.row-first{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+.row-second {
+	display: flex;
+	margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+	}
+.row-third {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.wrapper-content {
+	padding: 25px 0 25px; 
+	text-align: center;
+}
+.section-title{
+	margin-bottom: 30px;
+	}
+.column-items{
+	margin-bottom: 30px;
+}
+.title-top-text {
+    font-size: 20px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.row-first{
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+.row-second {
+	display: flex;
+	margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+	}
+.row-third {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+.wrapper-content {
+	padding: 0; 
+	text-align: center;
+}
+.title-top-text {
+    font-size: 20px;
+}
+.title-bottom-text {
+	font-size: 10px;
+}
+.section-title{
+	margin-bottom: 10px;
+	}
+.column-items{
+	margin-bottom: 10px;
+}
+	}
